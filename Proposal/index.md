@@ -7,7 +7,7 @@
 [//]: # (How will you meet the client's brief, their expectations, and their requirements.)
 
 ### Project Name
-Not A Mario Game
+Legally Not Mario
 
 ### Description
 [//]: # (This is the elevator pitch, sell the idea)
