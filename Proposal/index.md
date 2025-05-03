@@ -7,17 +7,17 @@
 [//]: # (How will you meet the client's brief, their expectations, and their requirements.)
 
 ### Project Name
-Donuts, Daggers & Dragons and other things and things bahhhhh
+Not A Mario Game
 
 ### Description
 [//]: # (This is the elevator pitch, sell the idea)
-Players play as humanoid donuts trained in the art of ninjitsu. 
-Players cooperate in teams of 2 to overcome the other teams in an arena-style, top-down, dagger-throwing, action-brawler. 
-After gaining victory, the winning team is given the opportunity to unlock epic loot by facing the Dragon...
+Players play in a 2D sidescrolling platformer similar to the classic Mario games. Walking, running and jumping their way through the level, players must avoid obstacles and or detroy the enemies else they kill the character and respawn them. They can find check points to set there spawn or collect pick ups for a temporary power boosts.
 
 ### Begin Date
+4th of May
 
 ### End Date
+1st of June
 
 ### Justification
 Read the design justification [here](project_justification.md).
@@ -62,10 +62,17 @@ Read the design justification [here](project_justification.md).
 [//]: # (Breakdown of phases of development, with estimated delivery times)
 [//]: # (In practice, if you were working on fixed price phases, you would also list expected payment after each phase.)
 | Phase | Completion Date |
-| --- | --- |
-| Prototype | Week 13 |
+| Menu and Foundations | Week 10 |
+| Player and Terrain | Week 11 |
+| Enemies and Pick ups | Week 12 |
+| Prototype Completion | Week 13 |
 
 ---
+
+## Team Member Info
+| Team Member | Student ID No. |
+| Nicholas Mancini | 1154237 |
+| Finn | Number |
 
 ## Agreement
 [//]: # (List out the arrangement)
