@@ -29,29 +29,53 @@ Read the design justification [here](project_justification.md).
 
 ### Requirements
 [//]: # (What are the requirements of the finished project?)
-* Needs the product in 5 weeks.
-* Gameplay should be fast-paced
-* Rounds should be short
-* Should be quick to restart
-* Feedback is a major point
-* People should be drawn to it by it's appearance
-    * Needs a catchy name
+* Needs the product by June 1st.
+* Must be a 2D sidescrolling platformer
+* Needs a main menu with start and exit functionality
+* Levels must be easily created in editor
+* Player variables must be exposed in editor
+* Player must be able to walk, run, jump and be damaged
+* Player inputs must use keyboard
+* Player must be able to kill enemies by jumping on their head
+* Enemies must be built to easily create different types
+* Enemy types to create: patrolling (back and forth) and chase player
+* Enemies must be placed in editor and spawned from stationary spawners
+* Required terrain types: slopes and flat platforms
+* Required obstacle types: spikes and pits (use out of bounds kill box)
+* Check point object to set player respawn. on death player must instant respawn at last checkpoint
+* Pick ups must be built to easily create different types
+* Pick ups must be stationary, placed in level editor
+* Required pick up types: speed boost
+
+Stretch Goals to implement (not required)
+* Level select in main menu
+* Water terrain type, must slow down player
+* Player movement swimming type, player can not jump or dive under, only swim on the waters surface
+* Double jump movement type, allowing the player to jump again mind air, but only once after jumping off the ground
+* Double jump pick up
+* Controller input support
 
 ### Expectations
 [//]: # (What are the client's expectations?)
 * Project delivered on time
+* Project completed with all requirements met
+* Project completed with as few major bugs as possible
 * Weekly updates on progress
-* Communication with the client when design issues encountered
+* Communication with the client when design issues encountered or when greater detail on specifications is requried
+* Communication with the client about how the project will be handeled and created
 * Quality transparent project management (add the client)
-* Does **not** require audio
-* Does **not** require high quality art
-    * Can use basic geometry
-    * Should still look nice using colour palettes
+* Temporary assets used and replacable by client
 
 ### Assumptions
 [//]: # (What are you assuming based on client responses)
-* UI art does not need to be high quality, will just use basic Unity UI sprites
-* Particles will be important, but since we shouldn't spend time on art, will use standard asset or free particle assets
+* UI art does not need to be high quality, will just use a collection of free sprites and basic geometry
+* Sound was not mentioned in the request, so if added it will not need to be high quality
+* Client asked for a main menu, it likely also needs to be acessable during gameplay so the player can quit if they wish. Similar to a pause menu
+* No mentions of sprite animations were made, however they were informed that free art assets would be used to test animation functionality, so they will likely be required
+* The client metioned terms like 'Ridged Body' so when communicating it can be assumed the client has a decent understanding of coding a game and explaining terms will not be required unless requested
+* Based on the terrain types and the request for easy level building, the client likely wants the game objects to be tileable in a grid fassion
+* Key board inputs will be assumed to use standard WASD or arrow keys as well as the shift key to sprint
+* There should be a cap on how many enemies can spawn, to prevent a crash from too many entities
 
 ---
 
