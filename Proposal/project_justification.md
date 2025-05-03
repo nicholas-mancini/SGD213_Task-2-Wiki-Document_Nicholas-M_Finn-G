@@ -159,8 +159,4 @@ Stretch Goals to implement (not required)
 ---
 
 ## Justification
-We really like the mention of "silly games catch people's eyes". So we took your suggestion of dragons and built on it with alliteration as a starting point. We went through many ideas, but finally came up with a title called "Donuts, Daggers & Dragons.
-
-The name along was enough to get conversation happening, and we soon found ourselves thinking of countless, comical and enjoyable scenarios stemming from the title.
-
-etc. Explain your design decisions in regards to the client's requirements.
+We liked the idea of working on a classic platformer similar to the older Mario games and thought we could make something similar. The goal will be to complete all the required specifications, however, if those are completed, we would like to work on some other mechanics from the stretch goals and maybe more. Since what we called the project didn't matter too much, being changeable by the client later, we decided to make it relate to the request for a Mario style game but make a joke about it not being exactly that. As such we came up with the name Legally Not Mario
