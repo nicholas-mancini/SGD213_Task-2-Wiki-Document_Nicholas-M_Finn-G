@@ -83,8 +83,6 @@ Stretch Goals to implement (not required)
 [//]: # (This is where you would list your hourly rates and time estimations)
 
 ## Milestones
-[//]: # (Breakdown of phases of development, with estimated delivery times)
-[//]: # (In practice, if you were working on fixed price phases, you would also list expected payment after each phase.)
 | Phase | Completion Date |
 | --- | --- |
 | Menu and Foundations | Week 10 |
