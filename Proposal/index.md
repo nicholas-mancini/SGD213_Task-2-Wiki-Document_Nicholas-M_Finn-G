@@ -86,6 +86,7 @@ Stretch Goals to implement (not required)
 [//]: # (Breakdown of phases of development, with estimated delivery times)
 [//]: # (In practice, if you were working on fixed price phases, you would also list expected payment after each phase.)
 | Phase | Completion Date |
+| --- | --- |
 | Menu and Foundations | Week 10 |
 | Player and Terrain | Week 11 |
 | Enemies and Pick ups | Week 12 |
@@ -95,6 +96,7 @@ Stretch Goals to implement (not required)
 
 ## Team Member Info
 | Team Member | Student ID No. |
+| --- | --- |
 | Nicholas Mancini | 1154237 |
 | Finn | Number |
 
