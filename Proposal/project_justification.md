@@ -1,30 +1,61 @@
 # Justification
-[//]: # (This section is an example of justifying your design and development decisions.)
 
 ## Overview
 
 ### Brief
 [//]: # (What was the client's brief?)
-The client is seeking a proof of concept for a game that is simple, yet a leader in its class
-* Users should be drawn to the game by its eye-catching visuals
-* The audio in the game should be exciting and drive the player's emotion
-* The gameplay should be fast-paced, quick to gain feedback and quick to retry
+The client is looking for a 2D sidescrolling platformer
+* The client should be able to easily customize the level, enemies, pick ups, and control the player
+* The client will focus of the art for the game
+* The gameplay should be similar to the classic mario games
+* The player should be able to walk, run, jump and be damaged
 
 ### Communication
 * When do you need this prototype by?
-> I need the prototype by Friday Week 13.
+> I expect it to be completed by June 1st.
 
-* What kind of games do you think are good?
-> Couch coop games appear to be simple enough to develop and can move reasonable units if done well.
+* Would you prefer the prototype be made in 2D or 3D?
+> 2D is okay for the prototype.
 
-* Since you only need a prototype, are you happy for us to focus on gameplay and use based geometry for art assets?
-> Yes perfect, the prototype is a proof of concept, please don't waste time on creating art assets; if the game is fun with simple art assets, that is perfect. At least change the colour palette to be aesthetically pleasing though.
+* Do you want a menu or UI for multiple levels?
+> A simple main menu with Start/Exit is sufficient, though a Level Select would be a good addition provided it can be made in time.
 
-* Do you need a menu system?
-> Well I need to be able to take this to potential investors to sell the idea. If I need to quit out of it every time I finish that will not work. It will need basic UI functionality, pausing, quitting out of game, exiting the application, returning to main menu, playing the game from main menu.
+* What level parameters do you want to be able to customize? (gravity, drag, etc.)
+> Most of the variables that should be customized are already exposed in the Rigidbody component, though I do expect most variables that the player controller uses to be exposed in Editor.
 
-* Are there any themes you think are popular or you would like to see in your game?
-> Hmm... not really. I do like dragons though! I think silly games catch people's eyes?
+* What mechanical terrain types do you want implemented? (slippery ground, slopes or blocks, water, etc.)
+> Slopes are a must, and I'd like to have water for the level design variety. However, it should also be treated as something of a stretch goal
+
+* What mechanical obstacles/objects do you want implemented? (out of bounds kill box, spikes, pot/chest, etc.)
+> Spikes and pits the player can fall into would both be excellent additions, which would require an out-of-bounds killbox.
+    
+* What types of enemy actions would you like? (throwing things, jumping, etc.) / How do you want the enemies to act? (walk back and forth, chase the player, etc.)
+> For enemies, I would want a couple of simple entities for the prototypes, mostly patrolling or chasing the player on certain platforms.
+    
+* How do you want enemies to spawn? (placed in level creation, random spawn, etc.)
+> They would be placed in level design and spawned in from stationary spawners.
+  
+* How do you want pick-ups to act? (stationary, move, time limit till despawn, etc.) / How do you want pick-ups to spawn? (placed in level creation, random, when the player does something, etc.)
+> For pickups, I would want them to be placed in level design and be stationary.
+  
+* What do you want the pick-ups to be able to change? (speed, jump, give new action type, etc.)
+> For the prototype, a simple speed pickup would suffice, though a double jump would also be excellent to have time permitting.
+
+* Are there any other actions you want them to do? (attack, double jump, etc.)
+> Being able to double jump would be a great addition to the player controller. I don't see the player attacking directly, outside of the classic Mario maneuver of jumping on top of enemies.
+  
+* What other movement types should they have? (swim, fly, etc.)
+> No other movement types would be required: should the water be implemented, I'd expect it slow the player down and prevent them from jumping but not be something they can dive under.
+  
+* What inputs do do you want the actions to use? (WASD, mouse, controller, etc.)
+> I would like the prototype to be playable with a keyboard, though if you could add controller support as a stretch goal it would an excellent addition.
+  
+* What player parameters do you want and which should be customizable? (health, speed, size, jump height, etc.)
+> All the player parameters you've listed are something I expect to be exposed in Editor and customizable.
+  
+* When the player dies how do you want them to respawn and are should there be check points? (instant respawn, puts player in menu, etc.)
+> Check points with instant respawn sound great!
+  
 
 ---
 
