@@ -1,0 +1,33 @@
+Composition
+Pros
+-	Extremely high flexibility: Can manually select the exact components required for each subscript.
+-	High modularity: Each game feature is broken down into separate scripts
+-	No rigid chain of inheritance: Only one class edit is required to fix/alter subclasses.
+-	High code-readability: Referenced components all serve a purpose and are clearly referenced in subscripts.
+Cons
+-	Extremely time consuming: Each specific game feature/functionality must be converted into a separate script, and then manually referenced in higher-level scripts. High level scripts don’t have in-built knowledge of lower-level functions.
+-	Messy: In large control scripts requiring access to tens (or even hundreds) of functionalities, unity scripts become overcomplicated and confusing. 
+
+Inheritance
+Pros
+-	Extremely time efficient: One base script stores all general functionalities, and one class reference imparts all functionalities onto subscripts.
+-	Clean: Inheritance-based systems typically require significantly less scripts than other types.
+Cons
+-	Low editability: Scripts are locked into receiving all methods of the base class, and changes to core functionality must be made on the base level.
+-	Extremely low modularity: All functions and variables must be defined at the base level. Subscripts cannot specify which functionalities they would like to access, and base script code cannot be easily copied across to other projects. 
+-	Difficult debugging: Tracking issues across multiple inherited classes (sometimes stemming from the base class itself) is time-consuming and often frustrating. 
+
+Interfaces
+Pros
+-	High code-readability: Like adding components in composition architecture, interfaces are added to subscripts in a flowing, logical manner.
+-	Moderate flexibility: There is no limit to the number of interfaces that can be attached to an object. With that said, method alterations are often still made at the base level.
+-	Moderate modularity: Interfaces often narrow in on specific game functionalities and features and can be attached to classes without prerequisites. Classes can specify the general range of functionalities required (although calling exact functionalities cannot always be achieved).
+-	Moderately clean: Interfaces can encompass a range of related functionalities, which generally leads to lower script usage. Additionally, interfaces don’t clutter IDE’s like Get Component calls.
+Cons
+-	Moderately time consuming: Setting up individual interfaces still takes longer than creating a singular base script.
+-	Mediocre editor compatibility: Some methods can’t be displayed publicly within the unity inspector, and methods that can are often more difficult to locate. 
+
+After carefully weighing up the positives and negatives of each architecture type, we eventually decided on an archetype for our 2D platformer. The inheritance architecture was easily eliminated; while its fast initial set up 
+time was appealing, its rigidity when attached to other classes was extremely difficult to ignore. Furthermore, we theorised that this rigidity would probably lead to frustration during project debugging. Composition architecture 
+initially appeared to be the obvious choice for our project; it outperformed the other architecture types in code-readability, modularity and flexibility. It was only after mapping out our project that we realised relying solely 
+on composition – within a relatively large scale 2D platformer project - 
