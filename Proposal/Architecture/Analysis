@@ -27,7 +27,12 @@ Cons
 -	Moderately time consuming: Setting up individual interfaces still takes longer than creating a singular base script.
 -	Mediocre editor compatibility: Some methods can’t be displayed publicly within the unity inspector, and methods that can are often more difficult to locate. 
 
-After carefully weighing up the positives and negatives of each architecture type, we eventually decided on an archetype for our 2D platformer. The inheritance architecture was easily eliminated; while its fast initial set up 
-time was appealing, its rigidity when attached to other classes was extremely difficult to ignore. Furthermore, we theorised that this rigidity would probably lead to frustration during project debugging. Composition architecture 
-initially appeared to be the obvious choice for our project; it outperformed the other architecture types in code-readability, modularity and flexibility. It was only after mapping out our project that we realised relying solely 
-on composition – within a relatively large scale 2D platformer project - 
+After carefully weighing up the positives and negatives of each architecture type, we eventually decided on an archetype for our 2D platformer. The inheritance architecture 
+was easily eliminated; while its fast initial set up time was appealing, its rigidity when attached to other classes was extremely difficult to ignore. Furthermore, we theorised 
+that this rigidity would probably lead to frustration during project debugging. Composition architecture initially appeared to be the obvious choice for our project; it 
+outperformed the other architecture types in code-readability, modularity and flexibility. It was only after mapping out our project that we realised relying solely 
+on composition – within a relatively large scale 2D platformer project - would lead to extreme script/component bloating and immense time loss. Thus, the architecture was 
+eventually ruled out in favour of interfaces which - while not quite as proficient in modularity, flexibility and code-cleanliness – were still relatively performative in those 
+areas; a significant upgrade on the inheritance architecture’s performance, and only a minor downgrade on that of the composition archetype. Additionally, the interface architecture 
+encourages grouping closely related methods within individual scripts; a structure that would almost certainly reduce script set up time during the project’s early stages. We determined 
+that employing an interface architecture would grant us the benefits of composition without its obvious deficiencies, and chose it as the primary framework for our project. 
