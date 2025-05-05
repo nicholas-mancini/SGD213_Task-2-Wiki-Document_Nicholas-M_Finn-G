@@ -1,0 +1,20 @@
+Before determining the specific classes, objects and functions that would appear in our 2D platformer, we discussed which of the three primary architecture types 
+(composition, inheritance or interfacing) would form the project’s framework. An early decision was required to advance our planning stage, as certain game 
+elements could be rendered redundant (or required) within certain architectures. 
+
+The composition archetype is generally considered the most straightforward of the three. In composition, game features and processes are separated into individual 
+scripts inheriting from the base Mono Behaviour class (the class that encompasses all Unity scripts by default). To call script-specific functions in other scripts 
+(such as a general controller script),  each ‘subscript’ is manually referenced via a Get Component command (or a Find Object of Type command if the subscript is not 
+attached to the same Game Object as the controller script) and stored within a local variable. 
+
+In inheritance architecture, one ‘base’ script (inheriting from Mono Behaviour) is created before tailoring more specific controller scripts. 
+This script stores variables and functions pertaining to a wider range of game operations; a Movement Base might store all requisite components of movement 
+(such as walking/sprinting functions, walking/sprinting speed variables, sprint cooldown variables etc.). Afterwards, subscripts that wish to implement base 
+class functionality can inherit directly from the base class (as opposed to Mono Behaviour), which transfers the entire contents of the base class into each 
+subscript’s ‘knowledge base’. Base class functions, which are often left blank in the base script, can be edited in subscripts using the ‘override’ keyword. 
+
+Interface architecture diverges significantly from the other two main types. In interfacing, a singular or small number of scripts are created which, instead of 
+defining a class and its inheritance, define public/private interface. Within the body of the interface/s, a range of methods (which are typically grouped by specific 
+functionality) are declared. When called upon by classes (via interface names being listed after the class declaration), interfaces reveal their contents to subscripts 
+in a contract-like package. The interface forms the structural framework of its linked classes; each class must reference each method defined in the interface and, if 
+required, build outwards from there. With this knowledge in place, a pros and cons list of each architecture type was constructed. 
