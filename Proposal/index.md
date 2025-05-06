@@ -96,7 +96,7 @@ Stretch Goals to implement (not required)
 | Team Member | Student ID No. |
 | --- | --- |
 | Nicholas Mancini | 1154237 |
-| Finn | Number |
+| Finn | 1164846 |
 
 ## Agreement
 [//]: # (List out the arrangement)
